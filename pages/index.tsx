@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import styles from './index.module.css'
-import Button from '../components/Button'
+import Button from '../components/button'
 
 const Home = () => {
   return (
