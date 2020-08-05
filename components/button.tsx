@@ -1,14 +1,14 @@
 import React from 'react'
+import clsx from 'clsx'
 import styles from './button.module.css'
 
 type Props = {
   color?: string // html color code
-  style?: React.CSSProperties
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button: React.FC<Props> = ({ color, style, children }) => {
+const Button: React.FC<Props> = ({ color, style, className, children, ...rest }) => {
   return (
-    <button className={styles.root} style={{ ...style, backgroundColor: color }}>
+    <button className={clsx(styles.root, className)} style={{ ...style, backgroundColor: color }} {...rest}>
       {children}
     </button>
   )
