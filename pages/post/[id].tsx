@@ -38,7 +38,7 @@ const PostPage = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <YourPost post={post} />
+      {post && <YourPost post={post} />}
     </div>
   )
 }
