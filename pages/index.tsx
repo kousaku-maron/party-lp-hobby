@@ -23,7 +23,6 @@ const HomePage = () => {
             </div>
             <div className={styles.subtitleTextWrapper}>
               <h3 className={styles.subtitleText}>“Party”はどこからでも参加できる横丁を提供します。</h3>
-              <h3 className={styles.subtitleText}>ya{process.env.API_KEY}</h3>
             </div>
 
             <div className={styles.actionArea}>
