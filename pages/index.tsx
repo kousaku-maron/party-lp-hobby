@@ -1,9 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from './index.module.css'
-import Button from '../components/button'
+import Button from 'components/button'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className={styles.root}>
       <Head>
@@ -22,17 +23,30 @@ const Home = () => {
             </div>
             <div className={styles.subtitleTextWrapper}>
               <h3 className={styles.subtitleText}>“Party”はどこからでも参加できる横丁を提供します。</h3>
+              <h3 className={styles.subtitleText}>ya{process.env.API_KEY}</h3>
             </div>
 
-            <div className={styles.lineButtonWrapper}>
-              <a href="https://lin.ee/B8pKue0">
-                <Button color="#00B900">
-                  <div className={styles.lineiconWrapper}>
-                    <img className={styles.lineicon} src="/images/lineicon.png" />
-                  </div>
-                  <p className={styles.lineButtonText}>事前登録はこちら</p>
-                </Button>
-              </a>
+            <div className={styles.actionArea}>
+              <div className={styles.lineButtonWrapper}>
+                <a href="https://lin.ee/B8pKue0">
+                  <Button color="#00B900">
+                    <div className={styles.lineiconWrapper}>
+                      <img className={styles.lineicon} src="/images/lineicon.png" />
+                    </div>
+                    <p className={styles.buttonText}>事前登録はこちら</p>
+                  </Button>
+                </a>
+              </div>
+
+              <div className={styles.createButtonWrapper}>
+                <Link href="/post/create">
+                  <a>
+                    <Button color="#FF7146">
+                      <p className={styles.buttonText}>あなたのページを作る!?</p>
+                    </Button>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -49,4 +63,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

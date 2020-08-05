@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 24px;
+  padding-bottom: 1.8rem;
 }
 
 .rightSection {
@@ -24,7 +24,13 @@
   justify-content: center;
   align-items: center;
   background-color: #FCAC4D;
-  padding-bottom: 24px;
+  padding-bottom: 1.8rem;
+}
+
+.actionArea {
+  display: flex;
+  align-items: center;
+  padding-top: 1.8rem;
 }
 
 .topContent {
@@ -33,59 +39,59 @@
 
 .screenshot {
   width: 50%;
-  border-radius: 50px;
+  border-radius: 3rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
 
 .titleTextWrapper {
-  padding-bottom: 36px
+  padding-bottom: 2.2rem
 }
 
 .subtitleTextWrapper {
-  padding-bottom: 12px
+  padding-bottom: 0.8rem
 }
 
 .lineButtonWrapper {
-  padding-top: 24px;
+  padding-right: 1.6rem;
 }
 
 .copyrightTextWrapper {
   position: absolute;
-  bottom: 24px;
-  right: 24px;
+  bottom: 1.5rem;
+  right: 1.5rem;
 }
 
 .lineiconWrapper {
-  padding-right: 6px;
+  padding-right: 0.4rem;
 }
 
 .lineicon {
-  width: 24px;
+  height: 1.3rem;
 }
 
 .copyrightText {
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 
 .titleText {
   color: #404040;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .subtitleText {
   color: #404040;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 100;
 }
 
-.lineButtonText {
-  font-size: 18px;
-  font-weight: 400;
+.buttonText {
+  font-size: 1.1rem;
+  /* font-weight: 400; */
   color: #ffffff;
 }
